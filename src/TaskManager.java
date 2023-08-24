@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class TaskManager {
-    private List<String> taskList;
+    private final List<String> taskList;
 
     public TaskManager(){
         this.taskList = new ArrayList<>();
@@ -39,8 +39,8 @@ public class TaskManager {
     }
 
     public String checkEmptyList() {
-        String response = taskList.isEmpty() ? " Yes" : " No";
-        return response;
+        return taskList.isEmpty() ? " Yes" : " No";
+
     }
 
     public String[] createVector(){
